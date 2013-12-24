@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qbc-Ui-jD9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Au1-C2-KcM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qSX-at-5OL">
+                                <rect key="frame" x="0.0" y="65" width="320" height="456"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kh9-bI-dsS" id="cfP-ta-QDP"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ox7-Bt-cMo">
+                                <rect key="frame" x="0.0" y="521" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Veh-sy-ae2"/>
+                                    <barButtonItem image="back-25.png" id="EKo-Iu-vtx">
+                                        <connections>
+                                            <action selector="goBack" destination="qSX-at-5OL" id="yKU-za-bOO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HkA-h6-blP"/>
+                                    <barButtonItem systemItem="refresh" id="0jU-Dp-yB5">
+                                        <connections>
+                                            <action selector="reload" destination="qSX-at-5OL" id="z3e-qk-N5X"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RXL-oK-OX6"/>
+                                    <barButtonItem title="Item" systemItem="stop" id="1ir-bE-5vQ">
+                                        <connections>
+                                            <action selector="stopLoading" destination="qSX-at-5OL" id="vZj-lK-TT6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Rkc-Y4-K33"/>
+                                    <barButtonItem image="forward-25.png" id="Pb3-Pr-1jo">
+                                        <connections>
+                                            <action selector="goForward" destination="qSX-at-5OL" id="eY3-fM-U8n"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ytd-Fq-sms"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6f6-yj-QZ2">
+                                <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="23P-rg-cCp"/>
+                                    <barButtonItem style="plain" id="of9-Pl-OGL">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Ge6-D4-7qs">
+                                            <rect key="frame" x="21" y="7" width="283" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="closeText" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="5iB-sX-RYo"/>
+                                            </connections>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="OO2-N3-MGP"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webAddress" destination="Ge6-D4-7qs" id="qDn-Jr-JNr"/>
+                        <outlet property="webView" destination="qSX-at-5OL" id="aNJ-9W-fQm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Cls-9k-6Y8">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="icG-dv-Cbe"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="hnr-l9-Kea"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="X4j-5m-A50"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="ywy-1b-8i0"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="116" y="-4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back-25.png" width="25" height="25"/>
+        <image name="forward-25.png" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

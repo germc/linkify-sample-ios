@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		564307D718530CA1007B4956 /* forward-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 564307D618530CA1007B4956 /* forward-25.png */; };
+		564307D918530D07007B4956 /* back-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 564307D818530D07007B4956 /* back-25.png */; };
+		56FC44CF184C34B9006D5136 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC44CE184C34B9006D5136 /* Foundation.framework */; };
+		56FC44D1184C34B9006D5136 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC44D0184C34B9006D5136 /* CoreGraphics.framework */; };
+		56FC44D3184C34B9006D5136 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC44D2184C34B9006D5136 /* UIKit.framework */; };
+		56FC44D9184C34B9006D5136 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56FC44D7184C34B9006D5136 /* InfoPlist.strings */; };
+		56FC44DB184C34B9006D5136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FC44DA184C34B9006D5136 /* main.m */; };
+		56FC44DF184C34B9006D5136 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FC44DE184C34B9006D5136 /* AppDelegate.m */; };
+		56FC44E2184C34B9006D5136 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FC44E0184C34B9006D5136 /* Main_iPhone.storyboard */; };
+		56FC44E5184C34B9006D5136 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FC44E3184C34B9006D5136 /* Main_iPad.storyboard */; };
+		56FC44E8184C34B9006D5136 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FC44E7184C34B9006D5136 /* ViewController.m */; };
+		56FC44EA184C34B9006D5136 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56FC44E9184C34B9006D5136 /* Images.xcassets */; };
+		56FC44F1184C34BA006D5136 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC44F0184C34BA006D5136 /* XCTest.framework */; };
+		56FC44F2184C34BA006D5136 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC44CE184C34B9006D5136 /* Foundation.framework */; };
+		56FC44F3184C34BA006D5136 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC44D2184C34B9006D5136 /* UIKit.framework */; };
+		56FC44FB184C34BA006D5136 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56FC44F9184C34BA006D5136 /* InfoPlist.strings */; };
+		56FC44FD184C34BA006D5136 /* LinkifyDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FC44FC184C34BA006D5136 /* LinkifyDemoTests.m */; };
+		56FC4507184D5E98006D5136 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FC4506184D5E98006D5136 /* JavaScriptCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56FC44F4184C34BA006D5136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56FC44C3184C34B9006D5136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56FC44CA184C34B9006D5136;
+			remoteInfo = LinkifyDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		564307D618530CA1007B4956 /* forward-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward-25.png"; sourceTree = "<group>"; };
+		564307D818530D07007B4956 /* back-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-25.png"; sourceTree = "<group>"; };
+		56FC44CB184C34B9006D5136 /* LinkifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FC44CE184C34B9006D5136 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		56FC44D0184C34B9006D5136 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		56FC44D2184C34B9006D5136 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		56FC44D6184C34B9006D5136 /* LinkifyDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkifyDemo-Info.plist"; sourceTree = "<group>"; };
+		56FC44D8184C34B9006D5136 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56FC44DA184C34B9006D5136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56FC44DC184C34B9006D5136 /* LinkifyDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinkifyDemo-Prefix.pch"; sourceTree = "<group>"; };
+		56FC44DD184C34B9006D5136 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56FC44DE184C34B9006D5136 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56FC44E1184C34B9006D5136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		56FC44E4184C34B9006D5136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		56FC44E6184C34B9006D5136 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56FC44E7184C34B9006D5136 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56FC44E9184C34B9006D5136 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		56FC44EF184C34BA006D5136 /* LinkifyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkifyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FC44F0184C34BA006D5136 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		56FC44F8184C34BA006D5136 /* LinkifyDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkifyDemoTests-Info.plist"; sourceTree = "<group>"; };
+		56FC44FA184C34BA006D5136 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56FC44FC184C34BA006D5136 /* LinkifyDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkifyDemoTests.m; sourceTree = "<group>"; };
+		56FC4506184D5E98006D5136 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56FC44C8184C34B9006D5136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC4507184D5E98006D5136 /* JavaScriptCore.framework in Frameworks */,
+				56FC44D1184C34B9006D5136 /* CoreGraphics.framework in Frameworks */,
+				56FC44D3184C34B9006D5136 /* UIKit.framework in Frameworks */,
+				56FC44CF184C34B9006D5136 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC44EC184C34BA006D5136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC44F1184C34BA006D5136 /* XCTest.framework in Frameworks */,
+				56FC44F3184C34BA006D5136 /* UIKit.framework in Frameworks */,
+				56FC44F2184C34BA006D5136 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		564307CD1852F763007B4956 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				564307D818530D07007B4956 /* back-25.png */,
+				564307D618530CA1007B4956 /* forward-25.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		56FC44C2184C34B9006D5136 = {
+			isa = PBXGroup;
+			children = (
+				56FC44D4184C34B9006D5136 /* LinkifyDemo */,
+				56FC44F6184C34BA006D5136 /* LinkifyDemoTests */,
+				56FC44CD184C34B9006D5136 /* Frameworks */,
+				56FC44CC184C34B9006D5136 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56FC44CC184C34B9006D5136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56FC44CB184C34B9006D5136 /* LinkifyDemo.app */,
+				56FC44EF184C34BA006D5136 /* LinkifyDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56FC44CD184C34B9006D5136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56FC4506184D5E98006D5136 /* JavaScriptCore.framework */,
+				56FC44CE184C34B9006D5136 /* Foundation.framework */,
+				56FC44D0184C34B9006D5136 /* CoreGraphics.framework */,
+				56FC44D2184C34B9006D5136 /* UIKit.framework */,
+				56FC44F0184C34BA006D5136 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56FC44D4184C34B9006D5136 /* LinkifyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				564307CD1852F763007B4956 /* img */,
+				56FC44DD184C34B9006D5136 /* AppDelegate.h */,
+				56FC44DE184C34B9006D5136 /* AppDelegate.m */,
+				56FC44E0184C34B9006D5136 /* Main_iPhone.storyboard */,
+				56FC44E3184C34B9006D5136 /* Main_iPad.storyboard */,
+				56FC44E6184C34B9006D5136 /* ViewController.h */,
+				56FC44E7184C34B9006D5136 /* ViewController.m */,
+				56FC44E9184C34B9006D5136 /* Images.xcassets */,
+				56FC44D5184C34B9006D5136 /* Supporting Files */,
+			);
+			path = LinkifyDemo;
+			sourceTree = "<group>";
+		};
+		56FC44D5184C34B9006D5136 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56FC44D6184C34B9006D5136 /* LinkifyDemo-Info.plist */,
+				56FC44D7184C34B9006D5136 /* InfoPlist.strings */,
+				56FC44DA184C34B9006D5136 /* main.m */,
+				56FC44DC184C34B9006D5136 /* LinkifyDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56FC44F6184C34BA006D5136 /* LinkifyDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				56FC44FC184C34BA006D5136 /* LinkifyDemoTests.m */,
+				56FC44F7184C34BA006D5136 /* Supporting Files */,
+			);
+			path = LinkifyDemoTests;
+			sourceTree = "<group>";
+		};
+		56FC44F7184C34BA006D5136 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56FC44F8184C34BA006D5136 /* LinkifyDemoTests-Info.plist */,
+				56FC44F9184C34BA006D5136 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56FC44CA184C34B9006D5136 /* LinkifyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FC4500184C34BA006D5136 /* Build configuration list for PBXNativeTarget "LinkifyDemo" */;
+			buildPhases = (
+				56FC44C7184C34B9006D5136 /* Sources */,
+				56FC44C8184C34B9006D5136 /* Frameworks */,
+				56FC44C9184C34B9006D5136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkifyDemo;
+			productName = LinkifyDemo;
+			productReference = 56FC44CB184C34B9006D5136 /* LinkifyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56FC44EE184C34BA006D5136 /* LinkifyDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56FC4503184C34BA006D5136 /* Build configuration list for PBXNativeTarget "LinkifyDemoTests" */;
+			buildPhases = (
+				56FC44EB184C34BA006D5136 /* Sources */,
+				56FC44EC184C34BA006D5136 /* Frameworks */,
+				56FC44ED184C34BA006D5136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56FC44F5184C34BA006D5136 /* PBXTargetDependency */,
+			);
+			name = LinkifyDemoTests;
+			productName = LinkifyDemoTests;
+			productReference = 56FC44EF184C34BA006D5136 /* LinkifyDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56FC44C3184C34B9006D5136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Studio Ousia";
+				TargetAttributes = {
+					56FC44CA184C34B9006D5136 = {
+						DevelopmentTeam = RHNH48U726;
+					};
+					56FC44EE184C34BA006D5136 = {
+						TestTargetID = 56FC44CA184C34B9006D5136;
+					};
+				};
+			};
+			buildConfigurationList = 56FC44C6184C34B9006D5136 /* Build configuration list for PBXProject "LinkifyDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56FC44C2184C34B9006D5136;
+			productRefGroup = 56FC44CC184C34B9006D5136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56FC44CA184C34B9006D5136 /* LinkifyDemo */,
+				56FC44EE184C34BA006D5136 /* LinkifyDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56FC44C9184C34B9006D5136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC44E5184C34B9006D5136 /* Main_iPad.storyboard in Resources */,
+				56FC44EA184C34B9006D5136 /* Images.xcassets in Resources */,
+				56FC44E2184C34B9006D5136 /* Main_iPhone.storyboard in Resources */,
+				564307D918530D07007B4956 /* back-25.png in Resources */,
+				564307D718530CA1007B4956 /* forward-25.png in Resources */,
+				56FC44D9184C34B9006D5136 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC44ED184C34BA006D5136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC44FB184C34BA006D5136 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56FC44C7184C34B9006D5136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC44E8184C34B9006D5136 /* ViewController.m in Sources */,
+				56FC44DF184C34B9006D5136 /* AppDelegate.m in Sources */,
+				56FC44DB184C34B9006D5136 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FC44EB184C34BA006D5136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56FC44FD184C34BA006D5136 /* LinkifyDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56FC44F5184C34BA006D5136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56FC44CA184C34B9006D5136 /* LinkifyDemo */;
+			targetProxy = 56FC44F4184C34BA006D5136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56FC44D7184C34B9006D5136 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56FC44D8184C34B9006D5136 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		56FC44E0184C34B9006D5136 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56FC44E1184C34B9006D5136 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		56FC44E3184C34B9006D5136 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56FC44E4184C34B9006D5136 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		56FC44F9184C34BA006D5136 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56FC44FA184C34BA006D5136 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56FC44FE184C34BA006D5136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56FC44FF184C34BA006D5136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56FC4501184C34BA006D5136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkifyDemo/LinkifyDemo-Prefix.pch";
+				INFOPLIST_FILE = "LinkifyDemo/LinkifyDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		56FC4502184C34BA006D5136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkifyDemo/LinkifyDemo-Prefix.pch";
+				INFOPLIST_FILE = "LinkifyDemo/LinkifyDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		56FC4504184C34BA006D5136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LinkifyDemo.app/LinkifyDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkifyDemo/LinkifyDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LinkifyDemoTests/LinkifyDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		56FC4505184C34BA006D5136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LinkifyDemo.app/LinkifyDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkifyDemo/LinkifyDemo-Prefix.pch";
+				INFOPLIST_FILE = "LinkifyDemoTests/LinkifyDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56FC44C6184C34B9006D5136 /* Build configuration list for PBXProject "LinkifyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC44FE184C34BA006D5136 /* Debug */,
+				56FC44FF184C34BA006D5136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56FC4500184C34BA006D5136 /* Build configuration list for PBXNativeTarget "LinkifyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC4501184C34BA006D5136 /* Debug */,
+				56FC4502184C34BA006D5136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56FC4503184C34BA006D5136 /* Build configuration list for PBXNativeTarget "LinkifyDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56FC4504184C34BA006D5136 /* Debug */,
+				56FC4505184C34BA006D5136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56FC44C3184C34B9006D5136 /* Project object */;
+}
