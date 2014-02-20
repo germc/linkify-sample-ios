@@ -59,7 +59,8 @@
 	}
     
     // Load finished
-    [webView stringByEvaluatingJavaScriptFromString:@"(function() {"
+    [webView stringByEvaluatingJavaScriptFromString:
+      @"(function() {"
         "if (!window.linkifyLoaded) {"
             "var d = document;"
             "var s = d.createElement('script');"
@@ -68,7 +69,7 @@
             "d.getElementsByTagName('head')[0].appendChild(s);"
             "window.linkifyLoaded = true;"
         "}"
-     "})()"
+      "})()"
     ];
 }
 
