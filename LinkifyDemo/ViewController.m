@@ -59,18 +59,8 @@
 	}
     
     // Load finished
-    [webView stringByEvaluatingJavaScriptFromString:
-      @"(function() {"
-        "if (!window.linkifyLoaded) {"
-            "var d = document;"
-            "var s = d.createElement('script');"
-            "s.type = 'text/javascript';"
-            "s.src = 'http://www-static.linkify.mobi/api/linkify.js?key=776cc8970adb37d4d68edc654ee3401af4ef2362';" // ja api key: 414fe115ad13fbb1deb75e731fa07a89e59791f4
-            "d.getElementsByTagName('head')[0].appendChild(s);"
-            "window.linkifyLoaded = true;"
-        "}"
-      "})()"
-    ];
+	[webView stringByEvaluatingJavaScriptFromString:@"(function(){if(!window.linkified){var d=document,s=d.createElement('script');s.type='text/javascript';s.src='http://127.0.0.1:6543/api/linkify.js?key=776cc8970adb37d4d68edc654ee3401af4ef2362';d.getElementsByTagName('head')[0].appendChild(s);window.linkified=true;}})()"]; // ja api key: 414fe115ad13fbb1deb75e731fa07a89e59791f4
+
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
